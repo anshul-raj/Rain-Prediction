@@ -35,14 +35,14 @@ We are using above mentioned data to predict the Rain a week in advance. We have
 
 We can see that using more data gives us more positive results, although both lack in precision, which brings us to the next part.
 
-# Improving precision
+### Improving precision
 For Improving the precision we are using a modifies training dataset which can be generated using balanced_dataset.py. This will return a dataset with no skewness wrt RainTomorrow.
 
 Now we split the data into train and split and applied *sklearn.ensemble.GradientBoostingClassifier* Which finally gives us a reasonable precision.
 
-# Contributers
-Anshul Raj <br /> 
-Siddhant Yadav <br />
+### Contact
+Anshul Raj (anshul18020@iiitd.ac.in)<br /> 
+Siddhant Yadav (siddhant) <br />
 Yash Vats 
 
 ## Thank You
