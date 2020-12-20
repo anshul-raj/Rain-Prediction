@@ -51,13 +51,13 @@ For using any model just use the following code
   model = pickle.load(open("Model-Name","rb"))
  ```
 
-To predict use 
+To predict, use 
 
  ```Python
   predictions = model.predict("Your Values")
  ```
 
-If you need the probability distribution for both the classes use
+If you need the probability distribution for the target classes, use
 
  ```Python
   predictions = model.predict_prob("Your Values")
@@ -69,6 +69,6 @@ If you want to make any modifications to the model itself, you can download its 
 ### Contact
 Anshul Raj (anshul18020@iiitd.ac.in)<br /> 
 Siddhant Yadav (siddhant18196@iiitd.ac.in) <br />
-Yash Vats (siddhant18204@iiitd.ac.in)
+Yash Vats (yash18204@iiitd.ac.in)
 
 <b>Thank You : )<b> 
