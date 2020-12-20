@@ -38,8 +38,8 @@ For Improving the precision we are using a modifies training dataset which can b
 Now we split the data into train and split and applied *sklearn.ensemble.GradientBoostingClassifier* Which finally gives us a reasonable precision.
 
 # Contributers
-Anshul Raj
-Siddhant Yadav
-Yash Vats
+Anshul Raj <br /> 
+Siddhant Yadav <br />
+Yash Vats 
 
 ## Thank You
