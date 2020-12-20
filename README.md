@@ -10,10 +10,8 @@ accuracy.
 
 # Data used
 Observations were drawn from numerous weather stations. The daily observations are available from http://www.bom.gov.au/climate/data.
-An example of latest weather observations in Canberra: http://www.bom.gov.au/climate/dwo/IDCJDW2801.latest.shtml
-
-Definitions adapted from http://www.bom.gov.au/climate/dwo/IDCJDW0000.shtml
 Data source: http://www.bom.gov.au/climate/dwo/ and http://www.bom.gov.au/climate/data.
+
 
 # Data used and predicted
 7 day folder , 2 sub headings
