@@ -15,9 +15,12 @@ Data source: http://www.bom.gov.au/climate/dwo/ and http://www.bom.gov.au/climat
 ## weatherAUS.csv
 contains 24 features and 1 output column.
 for different models we further make 2 more dataset from the existing dataset.
-### dataset_maker.py
 
-### balanced_dataset.py
+## dataset_maker.py
+ After some preprocessing, This file has a variable numdays, Using this variable it find numdays number of continuous days of data and clups them into a single row giving us data for numdays number of continuous days into a single row, this is repeated for all such continuous dates and finally returns a csv file for all the continuous days.
+
+## balanced_dataset.py
+ After some preprocessing, This file first seperates the data into two parts; one with RainTomorrow : 1 and RainTomorrow : 0. Seeing the skewness of the data it takes all the RainTomorrow : 1 data and randomly sample equal number of RainTomorrow : 0, Then concats them into a single data frame and then returnes. Now this dataframe as no skewness.
 
 # EDA and basic models
   In this Notebook we performed EDA on the data, and then applied some simple regression and decision based classifiers to get a gist for the data.
