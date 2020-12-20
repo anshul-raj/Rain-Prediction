@@ -9,10 +9,10 @@ data to predict tomorrow’s downpour with appreciable
 accuracy.
 
 ## Data used
-Observations were drawn from numerous weather stations. The daily observations are available from http://www.bom.gov.au/climate/data.
-Data source: <br />
-http://www.bom.gov.au/climate/dwo/ <br /> 
-http://www.bom.gov.au/climate/data. <br />
+Observations were drawn from numerous weather stations. The daily observations are available from 
+  Data source: <br />
+   http://www.bom.gov.au/climate/dwo/ <br /> 
+   http://www.bom.gov.au/climate/data. <br />
 
 ### weatherAUS.csv
 contains 24 features and 1 output column.
