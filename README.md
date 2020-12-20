@@ -10,7 +10,7 @@ accuracy.
 
 ## Data used
 Observations were drawn from numerous weather stations. The daily observations are available from http://www.bom.gov.au/climate/data.
-Data source: 
+Data source: <br />
 http://www.bom.gov.au/climate/dwo/ <br /> 
 http://www.bom.gov.au/climate/data. <br />
 
@@ -24,10 +24,10 @@ for different models we further make 2 more dataset from the existing dataset.
 ### balanced_dataset.py
  After some preprocessing, This file first seperates the data into two parts; one with RainTomorrow : 1 and RainTomorrow : 0. Seeing the skewness of the data it takes all the RainTomorrow : 1 data and randomly sample equal number of RainTomorrow : 0, Then concats them into a single data frame and then returnes. Now this dataframe as no skewness.
 
-# EDA and basic models
+### EDA and basic modeling
   In this Notebook we performed EDA on the data, and then applied some simple regression and decision based classifiers to get a gist for the data.
 
-### Predictions
+### 1 Week Predictions
 We are using above mentioned data to predict the Rain a week in advance. We have done this in 2 ways,
 
 1. Using a data from a single day and predictiong rain for the comming week
@@ -37,29 +37,29 @@ We are using above mentioned data to predict the Rain a week in advance. We have
 
 We can see that using more data gives us more positive results, although both lack in precision, which brings us to the next part.
 
-### Improving precision
+### Boosting Trees ( Improving precision )
 For Improving the precision we are using a modifies training dataset which can be generated using balanced_dataset.py. This will return a dataset with no skewness wrt RainTomorrow.
 
-Now we split the data into train and split and applied *sklearn.ensemble.GradientBoostingClassifier* Which finally gives us a reasonable precision.
+Now we split the data into train and split and apply *sklearn.ensemble.GradientBoostingClassifier* Which finally gives us reasonable precision for our model.
 
 ### How to Use ?
 
 For using any model just use the following code
 
- ```
+ ```Python
   import pickle
   model = pickle.load(open("Model-Name","rb"))
  ```
 
 To predict use 
 
- ```
+ ```Python
   predictions = model.predict("Your Values")
  ```
 
 If you need the probability distribution for both the classes use
 
- ```
+ ```Python
   predictions = model.predict_prob("Your Values")
  ```
 This will return a nx2 matrix which will contain probability for both the classes.
