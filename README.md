@@ -40,9 +40,33 @@ For Improving the precision we are using a modifies training dataset which can b
 
 Now we split the data into train and split and applied *sklearn.ensemble.GradientBoostingClassifier* Which finally gives us a reasonable precision.
 
+### How to Use ?
+
+For using any model just use the following code
+
+ ```
+  import pickle
+  model = pickle.load(open("Model-Name","rb"))
+ ```
+
+To predict use 
+
+ ```
+  predictions = model.predict("Your Values")
+ ```
+
+If you need the probability distribution for both the classes use
+
+ ```
+  predictions = model.predict_prob("Your Values")
+ ```
+This will return a nx2 matrix which will contain probability for both the classes.
+
+If you want to make any modifications to the model itself, you can download its respective notebook and make the changes accordingly.
+
 ### Contact
 Anshul Raj (anshul18020@iiitd.ac.in)<br /> 
-Siddhant Yadav (siddhant) <br />
-Yash Vats 
+Siddhant Yadav (siddhant18196@iiitd.ac.in) <br />
+Yash Vats (siddhant18204@iiitd.ac.in)
 
-## Thank You
+<b>Thank You : )<b> 
