@@ -13,12 +13,11 @@ Observations were drawn from numerous weather stations. The daily observations a
 Data source: http://www.bom.gov.au/climate/dwo/ and http://www.bom.gov.au/climate/data.
 
 ## weatherAUS.csv
-contains features:
-*Date,
-*Location,MinTemp,MaxTemp,Rainfall,Evaporation,Sunshine,WindGustDir,WindGustSpeed,WindDir9am,WindDir3pm,WindSpeed9am,WindSpeed3pm,Humidity9am,Humidity3pm,Pressure9am,Pressure3pm,Cloud9am,Cloud3pm,Temp9am,Temp3pm,RainToday,RISK_MM,RainTomorrow
-Further processed dataset obtained from dataset_maker.py:
-used for predicting rain for next 7 days using Random Forest
+contains 24 features and 1 output column.
+for different models we further make 2 more dataset from the existing dataset.
+### dataset_maker.py
 
+### balanced_dataset.py
 
 # Data used and predicted
 7 day folder , 2 sub headings
