@@ -12,10 +12,10 @@ accuracy.
 Observations were drawn from numerous weather stations. The daily observations are available from http://www.bom.gov.au/climate/data.
 Data source: http://www.bom.gov.au/climate/dwo/ and http://www.bom.gov.au/climate/data.
 
-Dataset: weatherAUS.csv
-  > used for Logistic Regression, Random Forest Classifiers, and Suport Vector Classifiers
-  > Further processed dataset obtained from dataset_maker.py:
-    > used for predicting rain for next 7 days using Random Forest
+##weatherAUS.csv
+  used for Logistic Regression, Random Forest Classifiers, and Suport Vector Classifiers
+  Further processed dataset obtained from dataset_maker.py:
+    used for predicting rain for next 7 days using Random Forest
 
 
 # Data used and predicted
