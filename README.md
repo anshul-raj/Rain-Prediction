@@ -27,7 +27,7 @@ for different models we further make 2 more dataset from the existing dataset.
 ### EDA and basic modeling
   In this Notebook we performed EDA on the data, and then applied some simple regression and decision based classifiers to get a gist for the data.
 
-### 1 Week Predictions
+### One Week Predictions
 We are using above mentioned data to predict the Rain a week in advance. We have done this in 2 ways,
 
 1. Using a data from a single day and predictiong rain for the comming week
